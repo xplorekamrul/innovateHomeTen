@@ -1,101 +1,189 @@
-import Image from "next/image";
+import { Card } from "@/components/Card";
+import { Container } from "@/components/Container";
+import Link from "next/link";
+import { IoIosArrowDown } from "react-icons/io";
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <header id="navbar" className="py-1">
+        <Container>
+          <div className="flex justify-between items-center">
+            <Link href="/">
+              <picture >
+                <img src="/logo.png" alt="logo.png" />
+              </picture>
+            </Link>
+            <nav className="flex gap-[30px] ">
+              <Link href="#" className="group hover:text-[#8454F5] ">Home<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+              <Link href="#" className="group hover:text-[#8454F5] ">About<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+              <Link href="#" className="group hover:text-[#8454F5] ">Service<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+              <Link href="#" className="group hover:text-[#8454F5] ">Portfolio<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+              <Link href="#" className="group hover:text-[#8454F5] ">Price<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+              <Link href="#" className="group hover:text-[#8454F5] ">Blog<IoIosArrowDown className="inline group-hover:text-[#8454F5] group-hover:rotate-[180deg] transition-[.8s] ease-in" /></Link>
+            </nav>
+            <Link href="#" className="px-[28px] py-[14px] rounded-[18px] bg-[#8454F5] ">Contact Us</Link>
+          </div>
+        </Container>
+      </header>
+      <main>
+        <section id="heroPart" className="bg-[url('/herobg.png')] w-full pt-[350px] pb-[150px] bg-[#d7f0f5] bg-center bg-no-repeat bg-cover">
+          <div className="w-[464px] mx-auto">
+            <h1 className="text-[64px] font-extrabold">Discover Our New Apps</h1>
+            <p className="text-[18px] mt-[20px] mb-[40px]">Jolly good excuse my french boot super my good sir cup of
+              char richard about chinwag.</p>
+            <Link href="#" className="px-[28px] py-[14px] rounded-[18px] text-[18px] bg-[#8454F5] ">Get A Quate</Link>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+        <section id="bestService" className="pt-[50px] pb-[40px]  bg-[#f8f8f6]">
+          <Container>
+            <h2 className="text-[48px] font-semibold text-center pb-[100px]">We Offer Best Services</h2>
+            <div className="flex justify-between">
+              <Card classNames={{
+                PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                headingClass: "text-[28px] font-semibold py-[20px]",
+                decsClass: "text-[18px]",
+                btnClass: "text-[16px] font-bold py-[20px]"
+
+              }}
+                cardHeading="Easy to use"
+                cardDecs="Jolly good excuse my french boot super my good sir cup "
+                Readmore="Read more"
+                color="black">
+              </Card>
+
+              <Card classNames={{
+                PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                headingClass: "text-[28px] font-semibold py-[20px]",
+                decsClass: "text-[18px]",
+                btnClass: "text-[16px] font-bold py-[20px]"
+
+              }}
+                cardHeading="App development"
+                cardDecs="Jolly good excuse my french boot super my good sir cup "
+                Readmore="Read more"
+                color="black">
+              </Card>
+
+              <Card classNames={{
+                PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                headingClass: "text-[28px] font-semibold py-[20px]",
+                decsClass: "text-[18px]",
+                btnClass: "text-[16px] font-bold py-[20px]"
+
+              }}
+                cardHeading="Fully functional"
+                cardDecs="Jolly good excuse my french boot super my good sir cup "
+                Readmore="Read more"
+                color="black">
+              </Card>
+
+              <Card classNames={{
+                PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                headingClass: "text-[28px] font-semibold py-[20px]",
+                decsClass: "text-[18px]",
+                btnClass: "text-[16px] font-bold py-[20px]"
+
+              }}
+                cardHeading="Secured protocol"
+                cardDecs="Jolly good excuse my french boot super my good sir cup "
+                Readmore="Read more"
+                color="black">
+              </Card>
+
+
+            </div>
+          </Container>
+        </section>
+
+        <section className="py-[80px]">
+          <Container>
+            <div className="flex justify-between">
+              <div className="w-[48%] ">
+                <h2 className="text-[48px] font-semibold mt-5 loading-[140%]">Innovate lets you launch your app in minutes</h2>
+                <p className="text-[18px] font-semibold mt-5 loading-[200%] pr-[10%]">Jolly good excuse my french boot super my good sir cup of
+                  char richard about chinwag.</p>
+                <div className="flex gap-[50px] mt-10">
+                  <Card classNames={{
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    headingClass: "text-[28px] font-semibold py-[20px]",
+                    decsClass: "text-[18px]",
+                    btnClass: "text-[16px] font-bold py-[20px]"
+
+                  }}
+                    cardHeading="Fully functional"
+                    cardDecs="Jolly good excuse my french boot super my good sir cup "
+                    Readmore="Read more"
+                    color="black">
+                  </Card>
+
+                  <Card classNames={{
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    headingClass: "text-[28px] font-semibold py-[20px]",
+                    decsClass: "text-[18px]",
+                    btnClass: "text-[16px] font-bold py-[20px]"
+
+                  }}
+                    cardHeading="Fully functional"
+                    cardDecs="Jolly good excuse my french boot super my good sir cup "
+                    Readmore="Read more"
+                    color="black">
+                  </Card>
+                </div>
+              </div>
+              <div className="w-[48%] rounded-lg bg-[#EEF1F6] h-[620px]">
+                <div className="w-[50%] h-full mx-auto bg-[#C4C4C4]"></div>
+              </div>
+
+            </div>
+          </Container>
+        </section>
+        <section className="py-[80px]">
+          <Container>
+            <div className="flex justify-between">
+              <div className="w-[48%] rounded-lg bg-[#EEF1F6] h-[620px]">
+                <div className="w-[50%] h-full mx-auto bg-[#C4C4C4]"></div>
+              </div>
+              <div className="w-[48%] ">
+                <h2 className="text-[48px] font-semibold mt-5 loading-[140%]">Innovate lets you launch your app in minutes</h2>
+                <p className="text-[18px] font-semibold mt-5 loading-[200%] pr-[10%]">Jolly good excuse my french boot super my good sir cup of
+                  char richard about chinwag.</p>
+                <div className="flex gap-[50px] mt-10">
+                  <Card classNames={{
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    headingClass: "text-[28px] font-semibold py-[20px]",
+                    decsClass: "text-[18px]",
+                    btnClass: "text-[16px] font-bold py-[20px]"
+
+                  }}
+                    cardHeading="Fully functional"
+                    cardDecs="Jolly good excuse my french boot super my good sir cup "
+                    Readmore="Read more"
+                    color="black">
+                  </Card>
+
+                  <Card classNames={{
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    headingClass: "text-[28px] font-semibold py-[20px]",
+                    decsClass: "text-[18px]",
+                    btnClass: "text-[16px] font-bold py-[20px]"
+
+                  }}
+                    cardHeading="Fully functional"
+                    cardDecs="Jolly good excuse my french boot super my good sir cup "
+                    Readmore="Read more"
+                    color="black">
+                  </Card>
+                </div>
+              </div>
+
+            </div>
+          </Container>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    </>
+  )
 }
+
