@@ -12,7 +12,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <Link href="/">
               <picture >
-                <img src="/logo.png" alt="logo.png" />
+                <img src="/Logo.png" alt="logo.png" />
               </picture>
             </Link>
             <nav className="flex gap-[30px] ">
