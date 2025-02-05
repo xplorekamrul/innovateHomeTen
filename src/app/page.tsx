@@ -107,7 +107,7 @@ export default function Home() {
                   char richard about chinwag.</p>
                 <div className="flex gap-[50px] mt-10">
                   <Card classNames={{
-                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                     headingClass: "text-[28px] font-semibold py-[20px]",
                     decsClass: "text-[18px]",
                     btnClass: "text-[16px] font-bold py-[20px]"
@@ -120,7 +120,7 @@ export default function Home() {
                   </Card>
 
                   <Card classNames={{
-                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                     headingClass: "text-[28px] font-semibold py-[20px]",
                     decsClass: "text-[18px]",
                     btnClass: "text-[16px] font-bold py-[20px]"
@@ -152,7 +152,7 @@ export default function Home() {
                   char richard about chinwag.</p>
                 <div className="flex gap-[50px] mt-10">
                   <Card classNames={{
-                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                     headingClass: "text-[28px] font-semibold py-[20px]",
                     decsClass: "text-[18px]",
                     btnClass: "text-[16px] font-bold py-[20px]"
@@ -165,7 +165,7 @@ export default function Home() {
                   </Card>
 
                   <Card classNames={{
-                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
+                    PreantClass: "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                     headingClass: "text-[28px] font-semibold py-[20px]",
                     decsClass: "text-[18px]",
                     btnClass: "text-[16px] font-bold py-[20px]"
@@ -179,6 +179,18 @@ export default function Home() {
                 </div>
               </div>
 
+            </div>
+          </Container>
+        </section>
+        <section className="py-[50px]">
+          <Container>
+            <h3 className="text-[48px] font-semibold text-center">Creative app showcase</h3>
+            <p className="text-[18px] text-center">The app provide design and digital marketing</p>
+            <div className="flex justify-between mt-[50px]">
+              <div className="w-[23%] h-[715px] rounded-lg bg-[#C4C4C4]"></div>
+              <div className="w-[23%] h-[715px] rounded-lg bg-[#C4C4C4]"></div>
+              <div className="w-[23%] h-[715px] rounded-lg bg-[#C4C4C4]"></div>
+              <div className="w-[23%] h-[715px] rounded-lg bg-[#C4C4C4]"></div>
             </div>
           </Container>
         </section>
