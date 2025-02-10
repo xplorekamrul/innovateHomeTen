@@ -12,7 +12,7 @@ interface IPriceCard {
 
 const items = [
   {
-    title: "Custom fields (basic)",
+    heading: "Custom fields (basic)",
     icon: (
       <svg
         width="24"
@@ -41,7 +41,7 @@ const items = [
     ),
   },
   {
-    title: "web forms (basic)",
+    heading: "web forms (basic)",
     icon: (
       <svg
         width="24"
@@ -71,7 +71,7 @@ const items = [
   },
 
   {
-    title: "Workflows (basic)",
+    heading: "Workflows (basic)",
     icon: (
       <svg
         width="24"
@@ -100,7 +100,7 @@ const items = [
     ),
   },
   {
-    title: "Reports & Dashboards (basic)",
+    heading: "Reports & Dashboards (basic)",
     icon: (
       <svg
         width="24"
@@ -129,7 +129,7 @@ const items = [
     ),
   },
   {
-    title: "Custom fields (basic)",
+    heading: "Custom fields (basic)",
     icon: (
       <svg
         width="24"
@@ -158,7 +158,7 @@ const items = [
     ),
   },
   {
-    title: "Custom fields (basic)",
+    heading: "Custom fields (basic)",
     icon: (
       <svg
         width="24"
@@ -187,7 +187,7 @@ const items = [
     ),
   },
   {
-    title: "Custom fields (basic)",
+    heading: "Custom fields (basic)",
     icon: (
       <svg
         width="24"
@@ -246,7 +246,7 @@ export const PriceCard: FC<IPriceCard> = ({
         {items.map((item, index) => (
           <div className="flex mb-[16px]" key={index}>
             <picture className="mr-2">{item.icon}</picture>{" "}
-            <span className="text-[18px]">{item.title}</span>
+            <span className="text-[18px]">{item.heading}</span>
           </div>
         ))}
       </div>
