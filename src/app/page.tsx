@@ -184,6 +184,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
+        
         <section className="py-[80px]">
           <Container>
             <div className="flex justify-between">
@@ -231,6 +232,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
+
         <section className="py-[50px]">
           <Container>
             <h3 className="text-[48px] font-semibold text-center">
@@ -310,6 +312,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
+
         <section className="py-[120px] bg-[#F8FDFE]">
           <Container>
             <div className="text-center">
@@ -325,6 +328,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
+
       </main>
     </>
   );

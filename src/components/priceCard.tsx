@@ -70,6 +70,7 @@ const items = [
       </svg>
     ),
   },
+
   {
     title: "Workflows (basic)",
     icon: (
@@ -254,6 +255,3 @@ export const PriceCard: FC<IPriceCard> = ({
   );
 };
 
-{
-  /*  */
-}
