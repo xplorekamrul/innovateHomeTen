@@ -8,7 +8,7 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function Home() {
   return (
     <>
-      <header id="navbar" className="py-1">
+      <header id="navbar" className="py-3 fixed top-0 w-full ">
         <Container>
           <div className="flex justify-between items-center">
             <Link href="/">
