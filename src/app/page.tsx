@@ -81,7 +81,7 @@ export default function Home() {
             <div className="flex justify-between">
               <Card
                 classNames={{
-                  PreantClass:
+                  ParentClass:
                     "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
                   headingClass: "text-[28px] font-semibold py-[20px]",
                   decsClass: "text-[18px]",
@@ -95,7 +95,7 @@ export default function Home() {
 
               <Card
                 classNames={{
-                  PreantClass:
+                  ParentClass:
                     "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
                   headingClass: "text-[28px] font-semibold py-[20px]",
                   decsClass: "text-[18px]",
@@ -109,7 +109,7 @@ export default function Home() {
 
               <Card
                 classNames={{
-                  PreantClass:
+                  ParentClass:
                     "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
                   headingClass: "text-[28px] font-semibold py-[20px]",
                   decsClass: "text-[18px]",
@@ -123,7 +123,7 @@ export default function Home() {
 
               <Card
                 classNames={{
-                  PreantClass:
+                  ParentClass:
                     "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-white hover:rounded-lg",
                   headingClass: "text-[28px] font-semibold py-[20px]",
                   decsClass: "text-[18px]",
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="flex gap-[50px] mt-10">
                   <Card
                     classNames={{
-                      PreantClass:
+                      ParentClass:
                         "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                       headingClass: "text-[28px] font-semibold py-[20px]",
                       decsClass: "text-[18px]",
@@ -166,7 +166,7 @@ export default function Home() {
 
                   <Card
                     classNames={{
-                      PreantClass:
+                      ParentClass:
                         "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                       headingClass: "text-[28px] font-semibold py-[20px]",
                       decsClass: "text-[18px]",
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="flex gap-[50px] mt-10">
                   <Card
                     classNames={{
-                      PreantClass:
+                      ParentClass:
                         "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                       headingClass: "text-[28px] font-semibold py-[20px]",
                       decsClass: "text-[18px]",
@@ -217,7 +217,7 @@ export default function Home() {
 
                   <Card
                     classNames={{
-                      PreantClass:
+                      ParentClass:
                         "w-[300px] pl-3 pt-2 border-[.8px] hover:border-black hover:bg-[#EEF1F6] hover:rounded-lg",
                       headingClass: "text-[28px] font-semibold py-[20px]",
                       decsClass: "text-[18px]",
