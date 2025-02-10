@@ -228,7 +228,7 @@ export const PriceCard: FC<IPriceCard> = ({
 }) => {
 
   return (
-    <div className={` ${className} w-[450px] p-[28px] rounded-[30px] bg-[#ffff] hover:bg-[#f8f8f8]`}>
+    <div className={` ${className} w-[400px] p-[28px] rounded-[30px] bg-[#ffff] hover:bg-[#f8f8f8]`}>
       {children}
       <h4 className="text-[20px] font-medium text-center pb-2 border-b-[2px] border-[#9c9c9d] relative after:content-[''] after:absolute after:bg-[#8454F5] after:w-[50px] after:h-[5px] after:top-[36px] after:left-1/2 after:-translate-x-1/2 after:rounded-xl">
         {cardTitle}
@@ -252,6 +252,7 @@ export const PriceCard: FC<IPriceCard> = ({
         ))}
       </div>
     </div>
+
   );
 };
 
