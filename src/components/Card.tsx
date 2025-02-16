@@ -34,7 +34,7 @@ export const Card: FC<ICard> = ({
                 {imgSrc && <img src={imgSrc} alt={alt || "Card Image"} />}
             </div>
             <h3 className={`${classNames.headingClass || ""}`}>{cardHeading}</h3>
-            <p className={`${classNames.decsClass || ""}`}>{cardDecs}</p>
+            <p className={`${classNames.decsClass || ""} `}>{cardDecs}</p>
             <p className={`${classNames.btnClass || ""} ${color ? `text-${color}-500` : ""}`}>
                 {Readmore}
             </p>

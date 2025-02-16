@@ -27,13 +27,13 @@ export const PostCard: FC<IPostCard> = ({
   CardDesc,
 }) => {
   return (
-    <div className={`${ClassName} w-[773px] pr-1 flex justify-between`}>{children}
+    <div className={`${ClassName} w-screen md:w-[773px] pr-1 flex justify-between flex-col md:flex-row mx-2 lg:mx-0 `}>{children}
       <div className="w-[250px] h-[274px] rounded-[40px] bg-[#C4C4C4]">
          <img src={CardImgs?.CardImg} alt={CardAlts?.CardAlt} className="w-full h-full rounded-[40px]"/>
       </div>
-      <div className="w-[498px]">
-         <h3 className="text-[36px] font-semibold ">{CardTitle}</h3>
-         <div className="flex justify-between w-[254px] items-center my-[25px]">
+      <div className=" mt-8 md:mt-0 md:w-[498px]">
+         <h3 className="text-[25px] md:text-[36px] font-semibold ">{CardTitle}</h3>
+         <div className="flex justify-between w-[254px] items-center my-[25px] ">
             <div className="h-[64px] w-[64px] rounded-full bg-[#C4C4C4]">
                <img src={CardImgs?.ProfileImg} alt={CardAlts?.ProfileAlt} />
             </div>
